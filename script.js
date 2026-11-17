@@ -21,5 +21,11 @@
   $('.language').addEventListener('click',e=>{e.currentTarget.textContent=e.currentTarget.textContent==='EN'?'SI':'EN'});
   $('.theme-button').addEventListener('click',e=>{document.documentElement.classList.toggle('extra-soft');e.currentTarget.animate([{transform:'rotate(0)'},{transform:'rotate(180deg)'}],{duration:450})});
 
-  $('#contactForm').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.currentTarget);sessionStorage.setItem('lasithEnquiryDraft',`Hi Lasith, I'm ${d.get('name')}. ${d.get('type')}: ${d.get('message')} — ${d.get('email')}`);open('https://www.facebook.com/share/18mfixSAkc/?mibextid=wwXIfr','_blank','noopener');$('.contact-form small').textContent='Your draft is ready. The verified Facebook contact channel has opened.'});
+  $('#contactForm').addEventListener('submit',e=>{
+    e.preventDefault();
+    const d=new FormData(e.currentTarget);
+    const message=`Hi Lasith, I'm ${d.get('name')}.\n${d.get('type')}: ${d.get('message')}\nEmail: ${d.get('email')}`;
+    open(`https://wa.me/94765956303?text=${encodeURIComponent(message)}`,'_blank','noopener');
+    $('.contact-form small').textContent='Your enquiry is ready in WhatsApp. Review it there and tap Send.';
+  });
 })();
