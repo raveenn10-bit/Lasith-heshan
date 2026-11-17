@@ -1,0 +1,9 @@
+{
+  "name": "lasith-heshan-digital-experience",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node dev-server.mjs",
+    "check": "node --check script.js && node --check game.js"
+  }
+}
