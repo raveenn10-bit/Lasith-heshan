@@ -3,201 +3,130 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#080808">
-  <meta name="description" content="Lasith Heshan — Sri Lankan digital creator. Explore the work, story and world beyond the frame.">
+  <meta name="theme-color" content="#100716">
+  <meta name="description" content="Lasith Heshan — Sri Lankan digital creator. Beyond the Frame.">
   <meta name="robots" content="noindex,nofollow">
   <meta property="og:title" content="Lasith Heshan — The Digital Experience">
   <meta property="og:description" content="Beyond the Frame. The official digital home of Lasith Heshan.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/lasith-heshan-original.jpg">
-  <title>Lasith Heshan — The Digital Experience</title>
+  <title>Lasith Heshan — Beyond the Frame</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/lasith-heshan.webp" as="image" type="image/webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="styles-fix.css">
+  <link rel="stylesheet" href="assets.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Lasith Heshan","jobTitle":"Digital Creator","homeLocation":{"@type":"Place","name":"Galle, Sri Lanka"},"sameAs":["https://www.facebook.com/share/18mfixSAkc/?mibextid=wwXIfr","https://www.instagram.com/hesh_an25/"]}</script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="noise" aria-hidden="true"></div>
-  <div class="cursor cursor-dot" aria-hidden="true"></div>
-  <div class="cursor cursor-ring" aria-hidden="true"></div>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
 
-  <div id="preloader" class="preloader" aria-live="polite">
-    <div class="preloader-mark"><span>L</span><i></i><span>H</span></div>
-    <div class="preloader-line"><i></i></div>
-    <p>Loading the experience</p>
+  <div class="loader" id="preloader">
+    <div class="loader-logo">LH</div>
+    <span><i></i></span>
+    <p>Entering the experience</p>
   </div>
 
-  <header class="site-header" id="top">
-    <a class="brand magnetic" href="#home" aria-label="Lasith Heshan home">
-      <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 8v39h20v9H1V8h9Zm25 0v19h18V8h10v48H53V36H35v20H25V8h10Z"/></svg>
-      <span>Lasith Heshan</span>
-    </a>
-    <div class="header-actions">
-      <button class="sound-toggle magnetic" type="button" aria-pressed="false" aria-label="Toggle ambient sound"><span></span><span></span><span></span><b>Sound off</b></button>
-      <button class="menu-toggle magnetic" type="button" aria-expanded="false" aria-controls="menu"><b>Menu</b><span></span><span></span></button>
+  <header class="topbar">
+    <a class="dw-logo" href="#home" aria-label="Lasith Heshan home">LH<span>.</span></a>
+    <div class="top-actions">
+      <button class="round-button language" type="button" aria-label="Language">EN</button>
+      <button class="round-button theme-button" type="button" aria-label="Toggle glow">☼</button>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu"><b>Menu</b><i></i><i></i></button>
     </div>
   </header>
 
-  <div class="menu" id="menu" aria-hidden="true">
-    <div class="menu-orb" aria-hidden="true"></div>
-    <nav aria-label="Primary">
-      <a href="#about"><small>01</small>About</a>
-      <a href="#journey"><small>02</small>Journey</a>
-      <a href="#content"><small>03</small>Content</a>
-      <a href="#gallery"><small>04</small>Gallery</a>
-      <a href="#game"><small>05</small>Play</a>
-      <a href="#contact"><small>06</small>Contact</a>
+  <div class="menu-panel" id="menu" aria-hidden="true">
+    <div class="menu-glow"></div>
+    <div class="menu-heading"><span>Navigate the world</span><b>LH.</b></div>
+    <nav>
+      <a href="#about"><span>01</span>About Lasith</a>
+      <a href="#content"><span>02</span>Content</a>
+      <a href="#stage"><span>03</span>On Stage</a>
+      <a href="#collabs"><span>04</span>Collabs</a>
+      <a href="#contact"><span>05</span>Bookings</a>
     </nav>
-    <div class="menu-foot"><span>Galle · Sri Lanka</span><a href="https://www.facebook.com/share/18mfixSAkc/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook ↗</a></div>
+    <button class="menu-game" id="menuGame" type="button">▣ Lasith Neon Run</button>
+    <div class="menu-socials"><a href="https://www.facebook.com/share/18mfixSAkc/?mibextid=wwXIfr" target="_blank" rel="noopener">f</a><a href="https://www.instagram.com/hesh_an25/" target="_blank" rel="noopener">◎</a></div>
   </div>
 
   <main id="main">
     <section class="hero" id="home">
-      <div class="hero-glow" aria-hidden="true"></div>
-      <div class="hero-grid" aria-hidden="true"></div>
-      <p class="hero-kicker reveal">Digital creator · Sri Lanka</p>
-      <div class="hero-title" aria-label="Lasith Heshan">
-        <span class="title-row title-back reveal">LASITH</span>
-        <span class="title-row title-front reveal">HESHAN<span class="dot">.</span></span>
+      <div class="hero-headline"><p>hello, I’m Lasith</p><h1>Welcome to<br><em>Lasith.</em></h1></div>
+      <div class="swipe-deck reveal" id="swipeDeck">
+        <div class="deck-card deck-back"><img src="assets/lasith-heshan.webp" alt="Lasith Heshan portrait backdrop"></div>
+        <div class="deck-card deck-mid"><img src="assets/lasith-heshan.webp" alt="Lasith Heshan portrait layer"></div>
+        <div class="deck-card deck-front"><img src="assets/lasith-heshan.webp" width="1380" height="2048" alt="Lasith Heshan in a black suit" fetchpriority="high"><button type="button" id="deckPause" aria-label="Pause card motion">Ⅱ</button><span class="tape tape-one">DIGITAL CREATOR</span><span class="tape tape-two">BEYOND THE FRAME</span></div>
+        <button class="swipe-control" id="swipeControl" type="button"><span>←</span> Swipe <span>→</span></button>
       </div>
-      <div class="portrait-wrap" data-parallax="0.08">
-        <img src="assets/lasith-heshan.webp" width="1380" height="2048" alt="Lasith Heshan in a black suit against a crimson studio backdrop" fetchpriority="high">
-        <div class="portrait-shine" aria-hidden="true"></div>
-      </div>
-      <div class="hero-copy reveal">
-        <p>Beyond the frame.<br><span>Stories with presence.</span></p>
-        <div class="hero-ctas">
-          <a class="button button-solid magnetic" href="#content">Explore my world <span>↘</span></a>
-          <a class="button button-ghost magnetic" href="#contact">Work with me</a>
-        </div>
-      </div>
-      <div class="hero-social reveal">
-        <a href="https://www.facebook.com/share/18mfixSAkc/?mibextid=wwXIfr" target="_blank" rel="noopener">FB</a>
-        <a href="https://www.instagram.com/hesh_an25/" target="_blank" rel="noopener">IG</a>
-      </div>
-      <a class="scroll-cue" href="#about"><span>Scroll to discover</span><i></i></a>
+      <div class="hero-statement reveal"><p>Creating content that</p><h2>connects brands with <em>people.</em></h2></div>
+      <button class="sound-orb" type="button" aria-label="Toggle ambient sound">◖</button>
+      <div class="soft-orb orb-one" aria-hidden="true"></div><div class="soft-orb orb-two" aria-hidden="true"></div>
     </section>
 
-    <section class="manifesto section" id="about">
-      <div class="section-index"><span>01</span><p>The story</p></div>
-      <div class="manifesto-copy">
-        <p class="eyebrow reveal">Not just content. A point of view.</p>
-        <h2 class="display reveal">I turn moments into <em>stories</em> people remember.</h2>
-        <div class="about-grid">
-          <p class="body-large reveal">Lasith Heshan is a digital creator from Galle, Sri Lanka, building a distinctive voice across social media through personality, visual storytelling and a sharp sense of culture.</p>
-          <div class="facts reveal">
-            <div><strong data-count="5.3">0</strong><span>K Facebook followers*</span></div>
-            <div><strong>Galle</strong><span>Home base</span></div>
-            <div><strong>UoK</strong><span>Mass Communication</span></div>
-            <small>*Public profile snapshot, November 2026</small>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="quote-band" aria-label="Brand statement">
-      <div class="marquee"><span>MY VIBE SPEAKS LOUDER THAN YOUR WORDS</span><i>✦</i><span>MY VIBE SPEAKS LOUDER THAN YOUR WORDS</span><i>✦</i></div>
-    </section>
-
-    <section class="journey section" id="journey">
-      <div class="section-index"><span>02</span><p>The journey</p></div>
-      <div class="journey-head">
-        <p class="eyebrow reveal">Always becoming</p>
-        <h2 class="display reveal">Built through curiosity.<br>Driven by <em>connection.</em></h2>
-      </div>
-      <div class="timeline">
-        <article class="timeline-item reveal"><span>01</span><div><p>Foundation</p><h3>Mass Communication</h3><p>Studying the ideas, media and human connections that shape how stories travel.</p></div></article>
-        <article class="timeline-item reveal"><span>02</span><div><p>Industry</p><h3>Creative experience</h3><p>Professional experience connected with Sterling Media Holdings and the wider media landscape.</p></div></article>
-        <article class="timeline-item reveal"><span>03</span><div><p>Now</p><h3>Digital creator</h3><p>Growing an audience and a personal brand grounded in style, energy and authentic presence.</p></div></article>
+    <section class="about section" id="about">
+      <div class="section-label reveal"><span>01</span><p>About Lasith</p></div>
+      <div class="about-title reveal"><p>This is more than content.</p><h2>A voice shaped by <em>culture, energy</em> and real connection.</h2></div>
+      <div class="about-layout">
+        <div class="portrait-card reveal"><img src="assets/lasith-heshan.webp" alt="Lasith Heshan portrait detail" loading="lazy"><div class="portrait-tag">Lasith Heshan <span>Digital creator</span></div></div>
+        <div class="about-copy reveal"><p>Based in Galle, Lasith is building a distinctive digital presence through personality-led storytelling and an unmistakable visual identity.</p><div class="fact-row"><div><strong>5.3K</strong><span>Facebook community*</span></div><div><strong>UoK</strong><span>Mass Communication</span></div></div><small>*Public profile snapshot · November 2026</small></div>
       </div>
     </section>
 
     <section class="archive section" id="content">
-      <div class="section-index light"><span>03</span><p>Social universe</p></div>
-      <div class="archive-head">
-        <div><p class="eyebrow reveal">Selected signals</p><h2 class="display reveal">The <em>digital</em><br>archive.</h2></div>
-        <p class="body-large reveal">A living collection of moments, ideas and personality. Follow the verified channels for the latest work.</p>
-      </div>
-      <div class="content-grid">
-        <a class="content-card card-tall reveal" href="https://www.facebook.com/share/18mfixSAkc/?mibextid=wwXIfr" target="_blank" rel="noopener">
-          <div class="card-image"><img src="assets/lasith-heshan.webp" alt="Lasith Heshan editorial portrait" loading="lazy"></div>
-          <div class="card-meta"><span>Facebook · Official profile</span><strong>Follow the story</strong><i>↗</i></div>
-        </a>
-        <a class="content-card card-wide reveal" href="https://www.instagram.com/hesh_an25/" target="_blank" rel="noopener">
-          <div class="card-abstract"><span>@hesh_an25</span><b>Every frame<br>has a frequency.</b></div>
-          <div class="card-meta"><span>Instagram</span><strong>Visual diary</strong><i>↗</i></div>
-        </a>
-        <div class="content-card card-note reveal">
-          <blockquote>“My vibe speaks louder than your words.”</blockquote>
-          <div class="card-meta"><span>Personal code</span><strong>Lasith Heshan</strong></div>
-        </div>
+      <div class="section-label reveal"><span>02</span><p>Viral archive</p></div>
+      <div class="section-heading reveal"><div><p>Selected digital hits & moments</p><h2>Viral<br><em>Archive.</em></h2></div><span>Explore the feed</span></div>
+      <div class="archive-grid">
+        <a class="archive-card tall reveal" href="https://www.facebook.com/share/18mfixSAkc/?mibextid=wwXIfr" target="_blank" rel="noopener"><div class="media-frame"><img src="assets/lasith-studio.webp" alt="Lasith Heshan working in a creator studio" loading="lazy"><button type="button" aria-label="Open Facebook profile">▶</button><small>Featured profile</small></div><div class="archive-meta"><span>Facebook · Creator</span><strong>Beyond the Frame</strong><p>View the latest stories and public updates.</p><i>↗</i></div></a>
+        <a class="archive-card reveal" href="https://www.instagram.com/hesh_an25/" target="_blank" rel="noopener"><div class="purple-art"><span>hesh_an25</span><b>THE VIBE<br>IS THE STORY.</b><i>◎</i></div><div class="archive-meta"><span>Instagram · Visual diary</span><strong>Inside the frame</strong><p>Style, personality and daily moments.</p><i>↗</i></div></a>
+        <div class="archive-card quote-card reveal"><blockquote>“My vibe speaks louder than your words.”</blockquote><div class="archive-meta"><span>Personal code</span><strong>Lasith Heshan</strong></div></div>
       </div>
     </section>
 
-    <section class="gallery section" id="gallery">
-      <div class="section-index"><span>04</span><p>Portrait study</p></div>
-      <div class="gallery-head"><p class="eyebrow reveal">In focus</p><h2 class="display reveal">Crimson.<br><em>Composure.</em></h2></div>
-      <div class="gallery-grid">
-        <button class="gallery-shot shot-one reveal" data-lightbox="assets/lasith-heshan-original.jpg" aria-label="Open full portrait"><img src="assets/lasith-heshan.webp" alt="Full studio portrait of Lasith Heshan" loading="lazy"></button>
-        <button class="gallery-shot shot-two reveal" data-lightbox="assets/lasith-heshan-original.jpg" aria-label="Open portrait detail"><img src="assets/lasith-heshan.webp" alt="Editorial portrait crop of Lasith Heshan" loading="lazy"></button>
-        <div class="gallery-word reveal"><span>BEYOND</span><b>THE FRAME</b><i>MMXXVI</i></div>
+    <section class="stage section" id="stage">
+      <div class="section-label reveal"><span>03</span><p>On stage</p></div>
+      <div class="section-heading reveal"><div><p>Presence beyond the screen</p><h2>Real rooms.<br><em>Real energy.</em></h2></div></div>
+      <div class="stage-track">
+        <article class="stage-card reveal"><div class="stage-visual visual-one"><img src="assets/lasith-event.webp" alt="Lasith Heshan at a modern evening event" loading="lazy"><span>MEDIA</span><b>01</b></div><div><small>Creator journey</small><h3>Building a voice in media</h3><p>Mass communication, digital culture and a growing creator identity.</p></div></article>
+        <article class="stage-card reveal"><div class="stage-visual visual-two"><img src="assets/lasith-studio.webp" alt="Lasith Heshan in his creator workspace" loading="lazy"><span>GALLE</span><b>02</b></div><div><small>Home ground</small><h3>Local roots. Wider reach.</h3><p>A Sri Lankan story with a global visual language.</p></div></article>
       </div>
     </section>
 
-    <section class="game-section section" id="game">
-      <div class="game-copy">
-        <p class="eyebrow reveal">Enter the neon city</p>
-        <h2 class="display reveal">LASITH RUN<span>.</span></h2>
-        <p class="body-large reveal">Jump the limits. Collect the charge. Keep moving.</p>
-        <button class="button button-solid magnetic reveal" id="launchGame" type="button">Play the game <span>▶</span></button>
-      </div>
-      <div class="game-poster reveal" aria-hidden="true"><div class="city"></div><div class="runner"><i></i></div><div class="game-score">HI · <span>0000</span></div></div>
+    <section class="collabs section" id="collabs">
+      <div class="section-label reveal"><span>04</span><p>Collabs</p></div>
+      <div class="collab-panel reveal"><div class="collab-orb"><span>LH</span></div><div><p>Brands · media · creators</p><h2>Make something people <em>feel.</em></h2><p class="body-copy">Creator-led campaigns, social content and memorable digital partnerships—built around a real audience and a clear idea.</p><a href="#contact">Start a conversation <span>↘</span></a></div></div>
     </section>
 
-    <section class="collab section" id="contact">
-      <div class="section-index"><span>05</span><p>Let's create</p></div>
-      <div class="collab-layout">
-        <div class="collab-copy"><p class="eyebrow reveal">Partnerships & bookings</p><h2 class="display reveal">LET'S MAKE<br><em>SOMETHING</em><br>UNMISSABLE.</h2><p class="body-large reveal">Campaigns, creator collaborations and media opportunities. Start with a clear idea—or just a conversation.</p></div>
+    <section class="game-banner section" id="game">
+      <div class="game-art reveal"><div class="neon-moon"></div><div class="neon-city"></div><div class="pixel-runner"></div></div>
+      <div class="game-copy reveal"><p>Interactive experience</p><h2>LASITH<br>NEON RUN</h2><span>Jump obstacles. Collect energy. Beat your best.</span><button id="launchGame" type="button">Play now <i>▶</i></button></div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="section-label reveal"><span>05</span><p>Bookings</p></div>
+      <div class="contact-layout">
+        <div class="contact-copy reveal"><p>Let's work together.</p><h2>Have an idea?<br><em>Let's make it happen.</em></h2><span>Brand collaborations, content campaigns and media opportunities.</span><div class="contact-social"><a href="https://www.facebook.com/share/18mfixSAkc/?mibextid=wwXIfr" target="_blank" rel="noopener">f</a><a href="https://www.instagram.com/hesh_an25/" target="_blank" rel="noopener">◎</a></div></div>
         <form class="contact-form reveal" id="contactForm">
-          <label><span>Your name</span><input name="name" autocomplete="name" required placeholder="How should I call you?"></label>
-          <label><span>Email</span><input name="email" type="email" autocomplete="email" required placeholder="you@company.com"></label>
+          <label><span>Your name</span><input name="name" required autocomplete="name" placeholder="e.g. Your name"></label>
+          <label><span>Email address</span><input name="email" type="email" required autocomplete="email" placeholder="hello@company.com"></label>
           <label><span>I'm interested in</span><select name="type"><option>Brand collaboration</option><option>Content campaign</option><option>Media appearance</option><option>Other</option></select></label>
-          <label><span>Tell me about it</span><textarea name="message" rows="4" required placeholder="Project, timing and what success looks like..."></textarea></label>
-          <button class="button button-solid magnetic" type="submit">Prepare enquiry <span>↗</span></button>
-          <p class="form-note">This preview prepares your enquiry and opens the verified Facebook contact channel. No form data is stored.</p>
+          <label><span>Tell me about the idea</span><textarea name="message" rows="4" required placeholder="Project, timing and goals..."></textarea></label>
+          <button type="submit">Let's get in touch <i>↗</i></button>
+          <small>This preview opens the verified Facebook contact channel. No data is stored.</small>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer-top"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 8v39h20v9H1V8h9Zm25 0v19h18V8h10v48H53V36H35v20H25V8h10Z"/></svg><a href="#top">Back to top ↑</a></div>
-    <p class="footer-name">LASITH HESHAN<span>.</span></p>
-    <div class="footer-bottom"><div><a href="https://www.facebook.com/share/18mfixSAkc/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/hesh_an25/" target="_blank" rel="noopener">Instagram</a></div><p>Designed & Developed by <a href="https://harshapex.com.lk" target="_blank" rel="noopener">Harsh Apex Digital Solutions ↗</a></p><p>© 2026 Lasith Heshan</p></div>
-  </footer>
+  <footer><div class="footer-mark">LH<span>.</span></div><p>Every great brand starts with one conversation.</p><div class="footer-line"></div><div class="footer-bottom"><span>© 2026 Lasith Heshan</span><p>Designed & Developed by <a href="https://harshapex.com.lk" target="_blank" rel="noopener">Harsh Apex Digital Solutions ↗</a></p></div></footer>
 
-  <button class="assistant-button magnetic" id="assistantButton" type="button" aria-expanded="false" aria-controls="assistant"><span>LH</span><b>Ask Lasith</b></button>
-  <aside class="assistant" id="assistant" aria-hidden="true" aria-label="Ask Lasith website assistant">
-    <div class="assistant-head"><div><span>LH</span><p><strong>Ask Lasith</strong><small>Website assistant · online</small></p></div><button id="assistantClose" type="button" aria-label="Close assistant">×</button></div>
-    <div class="assistant-body" id="assistantBody"><div class="bot-message">Hi! I’m the website assistant—not Lasith personally. What would you like to know?</div></div>
-    <div class="assistant-options"><button data-answer="work">Work with Lasith</button><button data-answer="social">Official social links</button><button data-answer="about">About Lasith</button><button data-answer="media">Request media kit</button></div>
-  </aside>
+  <button class="chat-fab" id="assistantButton" type="button" aria-expanded="false" aria-controls="assistant"><span>✦</span><b>Ask Lasith</b></button>
+  <aside class="assistant" id="assistant" aria-hidden="true"><div class="assistant-head"><div><span>LH</span><p><strong>Ask Lasith</strong><small>Website assistant</small></p></div><button id="assistantClose" type="button" aria-label="Close assistant">×</button></div><div class="assistant-body" id="assistantBody"><div class="bot-message">Hi! I’m the website assistant—not Lasith personally. What would you like to know?</div></div><div class="assistant-options"><button data-answer="work">Work with Lasith</button><button data-answer="social">Official socials</button><button data-answer="about">About Lasith</button></div></aside>
 
-  <div class="lightbox" id="lightbox" aria-hidden="true"><button type="button" aria-label="Close image">×</button><img src="" alt="Expanded portrait"></div>
-
-  <div class="game-modal" id="gameModal" aria-hidden="true">
-    <div class="game-shell">
-      <div class="game-top"><div><strong>LASITH RUN</strong><span>Beyond Limits</span></div><div class="game-stats"><p>Score <b id="gameScore">0000</b></p><p>Best <b id="gameBest">0000</b></p></div><button id="closeGame" type="button" aria-label="Close game">×</button></div>
-      <canvas id="gameCanvas" width="960" height="540" aria-label="Lasith Run game canvas"></canvas>
-      <div class="game-overlay" id="gameOverlay"><h3>BEYOND LIMITS</h3><p>Space / ↑ / tap to jump</p><button id="startGame" type="button">Start run</button></div>
-      <div class="mobile-control"><button id="jumpButton" type="button">JUMP ↑</button></div>
-    </div>
-  </div>
+  <div class="game-modal" id="gameModal" aria-hidden="true"><div class="game-shell"><div class="game-top"><div><strong>LASITH NEON RUN</strong><span>Beyond Limits</span></div><div class="game-stats"><p>Score <b id="gameScore">0000</b></p><p>Best <b id="gameBest">0000</b></p></div><button id="closeGame" type="button" aria-label="Close game">×</button></div><canvas id="gameCanvas" width="960" height="540" aria-label="Lasith Neon Run game canvas"></canvas><div class="game-overlay" id="gameOverlay"><h3>BEYOND LIMITS</h3><p>Space / ↑ / tap to jump</p><button id="startGame" type="button">Start run</button></div><div class="mobile-control"><button id="jumpButton" type="button">JUMP ↑</button></div></div></div>
 
   <script src="script.js" defer></script>
   <script src="game.js" defer></script>
