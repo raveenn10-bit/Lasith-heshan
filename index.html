@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="sequence.css">
   <link rel="stylesheet" href="brand.css">
   <link rel="stylesheet" href="reviews.css">
+  <link rel="stylesheet" href="motion.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Lasith Heshan","jobTitle":"Digital Creator","homeLocation":{"@type":"Place","name":"Galle, Sri Lanka"},"sameAs":["https://www.facebook.com/share/18mfixSAkc/?mibextid=wwXIfr","https://www.instagram.com/hesh_an25/"]}</script>
 </head>
 <body>
@@ -36,8 +37,6 @@
   <header class="topbar">
     <a class="dw-logo" href="#home" aria-label="Lasith Heshan home"><img src="assets/brand-logo.webp" alt="" width="48" height="48"><span>LASITH HESHAN<small>PERSONAL BRAND</small></span></a>
     <div class="top-actions">
-      <button class="round-button language" type="button" aria-label="Language">EN</button>
-      <button class="round-button theme-button" type="button" aria-label="Toggle glow">☼</button>
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu"><b>Menu</b><i></i><i></i></button>
     </div>
   </header>
@@ -50,8 +49,9 @@
       <a href="#content"><span>02</span>Content</a>
       <a href="#stage"><span>03</span>On Stage</a>
       <a href="#collabs"><span>04</span>Collabs</a>
-      <a href="#contact"><span>05</span>Bookings</a>
+      <a href="#films"><span>05</span>Films</a>
       <a href="#reviews"><span>06</span>Reviews</a>
+      <a href="#contact"><span>07</span>Bookings</a>
     </nav>
     <div class="menu-socials"><a href="https://www.facebook.com/share/18mfixSAkc/?mibextid=wwXIfr" target="_blank" rel="noopener">f</a><a href="https://www.instagram.com/hesh_an25/" target="_blank" rel="noopener">◎</a></div>
   </div>
@@ -109,24 +109,41 @@
     </section>
 
 
+    <section class="films section" id="films" aria-labelledby="filmsTitle">
+      <div class="section-label reveal"><span>05</span><p>Moving stories</p></div>
+      <div class="films-layout">
+        <div class="films-copy"><span class="films-kicker">The person. The presence. The perspective.</span><h2 id="filmsTitle">Beyond<br>the <em>still.</em></h2><p>A closer look at Lasith’s world, one frame at a time. Explore the collection.</p><div class="film-tape" aria-hidden="true"><span>CREATOR</span><span>STORYTELLER</span><span>ANNOUNCER</span></div><p>Three films. Coming soon.</p></div>
+        <div class="films-visual">
+          <div class="film-stack" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Three upcoming films. Swipe or use arrow keys.">
+            <article class="film-card" data-position="0" data-video-src="" aria-label="1 of 3: The introduction"><img src="assets/sequence/mobile/poster.jpg" alt="Preview artwork for The introduction" width="540" height="840" loading="lazy"><span class="film-number">FILM 01 / 03</span><button class="film-play" type="button" disabled aria-label="Video coming soon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m8 5 11 7-11 7Z"/></svg></button><button class="film-sound" type="button" aria-label="Unmute video" aria-pressed="false" hidden>♪̸</button><div class="film-meta"><small>THE LASITH HESHAN COLLECTION</small><h3>The introduction</h3><p>Preview artwork · Film coming soon</p></div></article>
+            <article class="film-card" data-position="1" data-video-src="" aria-label="2 of 3: Behind the frame"><img src="assets/lasith-studio.webp" alt="Preview artwork for Behind the frame" width="540" height="840" loading="lazy"><span class="film-number">FILM 02 / 03</span><button class="film-play" type="button" disabled aria-label="Video coming soon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m8 5 11 7-11 7Z"/></svg></button><button class="film-sound" type="button" aria-label="Unmute video" aria-pressed="false" hidden>♪̸</button><div class="film-meta"><small>THE LASITH HESHAN COLLECTION</small><h3>Behind the frame</h3><p>Preview artwork · Film coming soon</p></div></article>
+            <article class="film-card" data-position="2" data-video-src="" aria-label="3 of 3: In the moment"><img src="assets/lasith-event.webp" alt="Preview artwork for In the moment" width="540" height="840" loading="lazy"><span class="film-number">FILM 03 / 03</span><button class="film-play" type="button" disabled aria-label="Video coming soon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m8 5 11 7-11 7Z"/></svg></button><button class="film-sound" type="button" aria-label="Unmute video" aria-pressed="false" hidden>♪̸</button><div class="film-meta"><small>THE LASITH HESHAN COLLECTION</small><h3>In the moment</h3><p>Preview artwork · Film coming soon</p></div></article>
+          </div>
+          <div class="film-nav"><button id="filmPrev" type="button" aria-label="Previous film"><svg style="transform:rotate(180deg)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button><p id="filmCount" aria-live="polite">01 / 03</p><button id="filmNext" type="button" aria-label="Next film"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div><p class="film-instruction">SWIPE TO EXPLORE ← →</p>
+        </div>
+      </div>
+    </section>
+
     <section class="reviews section" id="reviews" aria-labelledby="reviewsTitle">
-      <div class="section-label reveal"><span>05</span><p>Recommendations</p></div>
+      <div class="section-label reveal"><span>06</span><p>Recommendations</p></div>
       <div class="reviews-heading reveal"><h2 id="reviewsTitle">Words that<br><em>mean everything.</em></h2><div class="recommendation"><strong>100%</strong><span>recommend · 14 Facebook reviews*</span></div></div>
-      <div class="reviews-grid">
-        <figure class="review-card reveal"><div class="review-top"><span>↗ Recommends Heshan</span><b aria-hidden="true">“</b></div><blockquote>Excellent announcer! Clear, confident, and engaging voice with great energy. Highly recommended! 📣 ❤️</blockquote><figcaption><span class="review-initials" aria-hidden="true">RK</span><div><cite>Ramesh Kalansooriya</cite><span class="review-date">Facebook recommendation · 9 Aug</span></div></figcaption></figure>
-        <figure class="review-card reveal"><div class="review-top"><span>↗ Recommends Heshan</span><b aria-hidden="true">“</b></div><blockquote>Easy to work with! Highly recommended ✨ highly informative and the style of presentation is pleasant-able</blockquote><figcaption><span class="review-initials" aria-hidden="true">LD</span><div><cite>Loshitha Dhananjaya</cite><span class="review-date">Facebook recommendation · 27 Apr 2025</span></div></figcaption></figure>
-        <figure class="review-card reveal"><div class="review-top"><span>↗ Recommends Heshan</span><b aria-hidden="true">“</b></div><blockquote>Highly recommended 😍❤️</blockquote><figcaption><span class="review-initials" aria-hidden="true">HA</span><div><cite>Hiru Amarajeewa</cite><span class="review-date">Facebook recommendation · 25 Apr 2025</span></div></figcaption></figure>
-        <figure class="review-card reveal"><div class="review-top"><span>↗ Recommends Heshan</span><b aria-hidden="true">“</b></div><blockquote>Highly recommended announcer—clear voice, professional, perfect for any event. 🎤</blockquote><figcaption><span class="review-initials" aria-hidden="true">ND</span><div><cite>Navodya De Silva</cite><span class="review-date">Facebook recommendation · 25 Apr 2025</span></div></figcaption></figure>
-        <figure class="review-card reveal"><div class="review-top"><span>↗ Recommends Heshan</span><b aria-hidden="true">“</b></div><blockquote>highly recommended for everyone for any type of event 🖤</blockquote><figcaption><span class="review-initials" aria-hidden="true">RD</span><div><cite>Ranuga Deepna Vidmal</cite><span class="review-date">Facebook recommendation · 24 Apr 2025</span></div></figcaption></figure>
-        <figure class="review-card reveal"><div class="review-top"><span>↗ Recommends Heshan</span><b aria-hidden="true">“</b></div><blockquote>A true multi-talented creator – from powerful event announcing to stunning photography and videography, every post is full of energy and creativity.</blockquote><details><summary>Read full review</summary><p>The content feels professional yet personal, making it easy to connect with the work. If you’re looking for someone to elevate your event or brand, this is the person to call. Highly recommended for anyone seeking top-tier talent in media and promotions. 👏🔥</p></details><figcaption><span class="review-initials" aria-hidden="true">MV</span><div><cite>Mithuranga Vithanage</cite><span class="review-date">Facebook recommendation · 24 Apr 2025</span></div></figcaption></figure>
-        <figure class="review-card reveal"><div class="review-top"><span>↗ Recommends Heshan</span><b aria-hidden="true">“</b></div><blockquote>Don&#x27;t hesitate to get his service. I highly recommend him to others ❤️👏</blockquote><figcaption><span class="review-initials" aria-hidden="true">KL</span><div><cite>Kavindu Liyanage</cite><span class="review-date">Facebook recommendation · 24 Apr 2025</span></div></figcaption></figure>
-        <figure class="review-card reveal"><div class="review-top"><span>↗ Recommends Heshan</span><b aria-hidden="true">“</b></div><blockquote>Highly recommended this service ❤️ Heshan is a great person &amp; great announcer.Good luck Heshan ❤️🔥</blockquote><figcaption><span class="review-initials" aria-hidden="true">KS</span><div><cite>Kihanduwage Sriyani</cite><span class="review-date">Facebook recommendation · 24 Apr 2025</span></div></figcaption></figure>
+      <div class="review-tools"><p>Good words. Lasting connections.</p><div class="motion-controls"><button type="button" data-review-step="-1" aria-label="Scroll reviews left">←</button><button type="button" id="reviewsPause" aria-label="Pause automatic reviews" aria-pressed="false">Ⅱ</button><button type="button" data-review-step="1" aria-label="Scroll reviews right">→</button></div></div>
+      <div class="reviews-window" tabindex="0" role="region" aria-label="Facebook recommendations, horizontally scrollable"><div class="reviews-grid">
+        <figure class="review-card"><div class="review-top"><span>↗ Recommends Heshan</span><b aria-hidden="true">“</b></div><blockquote>Excellent announcer! Clear, confident, and engaging voice with great energy. Highly recommended! 📣 ❤️</blockquote><figcaption><span class="review-initials" aria-hidden="true">RK</span><div><cite>Ramesh Kalansooriya</cite><span class="review-date">Facebook recommendation · 9 Aug</span></div></figcaption></figure>
+        <figure class="review-card"><div class="review-top"><span>↗ Recommends Heshan</span><b aria-hidden="true">“</b></div><blockquote>Easy to work with! Highly recommended ✨ highly informative and the style of presentation is pleasant-able</blockquote><figcaption><span class="review-initials" aria-hidden="true">LD</span><div><cite>Loshitha Dhananjaya</cite><span class="review-date">Facebook recommendation · 27 Apr 2025</span></div></figcaption></figure>
+        <figure class="review-card"><div class="review-top"><span>↗ Recommends Heshan</span><b aria-hidden="true">“</b></div><blockquote>Highly recommended 😍❤️</blockquote><figcaption><span class="review-initials" aria-hidden="true">HA</span><div><cite>Hiru Amarajeewa</cite><span class="review-date">Facebook recommendation · 25 Apr 2025</span></div></figcaption></figure>
+        <figure class="review-card"><div class="review-top"><span>↗ Recommends Heshan</span><b aria-hidden="true">“</b></div><blockquote>Highly recommended announcer—clear voice, professional, perfect for any event. 🎤</blockquote><figcaption><span class="review-initials" aria-hidden="true">ND</span><div><cite>Navodya De Silva</cite><span class="review-date">Facebook recommendation · 25 Apr 2025</span></div></figcaption></figure>
+        <figure class="review-card"><div class="review-top"><span>↗ Recommends Heshan</span><b aria-hidden="true">“</b></div><blockquote>highly recommended for everyone for any type of event 🖤</blockquote><figcaption><span class="review-initials" aria-hidden="true">RD</span><div><cite>Ranuga Deepna Vidmal</cite><span class="review-date">Facebook recommendation · 24 Apr 2025</span></div></figcaption></figure>
+        <figure class="review-card review-long"><div class="review-top"><span>↗ Recommends Heshan</span><b aria-hidden="true">“</b></div><blockquote>A true multi-talented creator – from powerful event announcing to stunning photography and videography, every post is full of energy and creativity. The content feels professional yet personal, making it easy to connect with the work. If you’re looking for someone to elevate your event or brand, this is the person to call. Highly recommended for anyone seeking top-tier talent in media and promotions. 👏🔥</blockquote><figcaption><span class="review-initials" aria-hidden="true">MV</span><div><cite>Mithuranga Vithanage</cite><span class="review-date">Facebook recommendation · 24 Apr 2025</span></div></figcaption></figure>
+        <figure class="review-card"><div class="review-top"><span>↗ Recommends Heshan</span><b aria-hidden="true">“</b></div><blockquote>Don&#x27;t hesitate to get his service. I highly recommend him to others ❤️👏</blockquote><figcaption><span class="review-initials" aria-hidden="true">KL</span><div><cite>Kavindu Liyanage</cite><span class="review-date">Facebook recommendation · 24 Apr 2025</span></div></figcaption></figure>
+        <figure class="review-card"><div class="review-top"><span>↗ Recommends Heshan</span><b aria-hidden="true">“</b></div><blockquote>Highly recommended this service ❤️ Heshan is a great person &amp; great announcer.Good luck Heshan ❤️🔥</blockquote><figcaption><span class="review-initials" aria-hidden="true">KS</span><div><cite>Kihanduwage Sriyani</cite><span class="review-date">Facebook recommendation · 24 Apr 2025</span></div></figcaption></figure>
+      </div>
       </div>
       <p class="reviews-note">*Recommendation summary as shown in the supplied Facebook screenshots. Eight featured recommendations are reproduced here.</p>
     </section>
 
     <section class="contact section" id="contact">
-      <div class="section-label reveal"><span>06</span><p>Bookings</p></div>
+      <div class="section-label reveal"><span>07</span><p>Bookings</p></div>
       <div class="contact-layout">
         <div class="contact-copy reveal"><p>Let's work together.</p><h2>Have an idea?<br><em>Let's make it happen.</em></h2><span>High-end cinematic content for visionary brands and high-value audiences. Get in touch for bookings and collaborations.</span><div class="direct-contact"><a href="tel:+94762255671"><small>CALL FOR BOOKINGS</small><strong>076 225 5671</strong><b aria-hidden="true">↗</b></a><a href="https://wa.me/94765956303" target="_blank" rel="noopener"><small>WHATSAPP</small><strong>076 595 6303</strong><b aria-hidden="true">↗</b></a></div><div class="contact-social"><a href="https://www.facebook.com/share/18mfixSAkc/?mibextid=wwXIfr" target="_blank" rel="noopener">f</a><a href="https://www.instagram.com/hesh_an25/" target="_blank" rel="noopener">◎</a></div></div>
         <form class="contact-form reveal" id="contactForm">
@@ -153,5 +170,6 @@
   <script src="script.js" defer></script>
   <script src="sequence.js" defer></script>
   <script src="brand.js" defer></script>
+  <script src="motion.js" defer></script>
 </body>
 </html>

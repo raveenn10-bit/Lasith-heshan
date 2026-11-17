@@ -6,7 +6,8 @@
   $$('.reveal').forEach(el=>observer.observe(el));
 
   const menu=$('#menu'), menuButton=$('.menu-button');
-  const setMenu=open=>{menu.classList.toggle('open',open);menu.setAttribute('aria-hidden',String(!open));menuButton.setAttribute('aria-expanded',String(open));document.body.classList.toggle('locked',open)};
+  menu.inert=true;
+  const setMenu=open=>{menu.inert=!open;menu.classList.toggle('open',open);menu.setAttribute('aria-hidden',String(!open));menuButton.setAttribute('aria-expanded',String(open));document.body.classList.toggle('locked',open)};
   menuButton.addEventListener('click',()=>setMenu(!menu.classList.contains('open')));
   $$('#menu a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
   document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
@@ -18,8 +19,6 @@
     $$('a,button,input,select,textarea,.archive-card,.stage-card').forEach(el=>{el.addEventListener('mouseenter',()=>blob.classList.add('hot'));el.addEventListener('mouseleave',()=>blob.classList.remove('hot'))});
   }
 
-  $('.language').addEventListener('click',e=>{e.currentTarget.textContent=e.currentTarget.textContent==='EN'?'SI':'EN'});
-  $('.theme-button').addEventListener('click',e=>{document.documentElement.classList.toggle('extra-soft');e.currentTarget.animate([{transform:'rotate(0)'},{transform:'rotate(180deg)'}],{duration:450})});
 
   $('#contactForm').addEventListener('submit',e=>{
     e.preventDefault();
