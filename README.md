@@ -8,7 +8,6 @@ A cinematic, mobile-first personal brand website for Lasith Heshan, designed and
 - Fullscreen navigation, scroll reveals and reduced-motion support
 - Verified Facebook and Instagram links
 - Lightweight FAQ website assistant
-- Playable **Lasith Run — Beyond Limits** Canvas game with local high score
 - Accessible contact enquiry handoff
 - SEO metadata, Person schema, sitemap and private-preview robots policy
 

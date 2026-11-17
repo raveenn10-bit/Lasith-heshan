@@ -38,5 +38,4 @@
   $$('.assistant-options button').forEach(b=>b.addEventListener('click',()=>{const body=$('#assistantBody');body.insertAdjacentHTML('beforeend',`<div class="user-message">${b.textContent}</div><div class="bot-message">${answers[b.dataset.answer]}</div>`);body.scrollTop=body.scrollHeight}));
 
   $('#contactForm').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.currentTarget);sessionStorage.setItem('lasithEnquiryDraft',`Hi Lasith, I'm ${d.get('name')}. ${d.get('type')}: ${d.get('message')} — ${d.get('email')}`);open('https://www.facebook.com/share/18mfixSAkc/?mibextid=wwXIfr','_blank','noopener');$('.contact-form small').textContent='Your draft is ready. The verified Facebook contact channel has opened.'});
-  $('#menuGame').addEventListener('click',()=>{setMenu(false);$('#launchGame').click()});
 })();
