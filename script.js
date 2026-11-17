@@ -18,18 +18,8 @@
     $$('a,button,input,select,textarea,.archive-card,.stage-card').forEach(el=>{el.addEventListener('mouseenter',()=>blob.classList.add('hot'));el.addEventListener('mouseleave',()=>blob.classList.remove('hot'))});
   }
 
-  const deck=$('#swipeDeck');let startX=0,dragging=false,paused=false;
-  const shift=dir=>{if(paused)return;deck.classList.remove('shift-left','shift-right');requestAnimationFrame(()=>deck.classList.add(dir<0?'shift-left':'shift-right'));setTimeout(()=>deck.classList.remove('shift-left','shift-right'),850)};
-  deck.addEventListener('pointerdown',e=>{startX=e.clientX;dragging=true;deck.setPointerCapture(e.pointerId)});
-  deck.addEventListener('pointerup',e=>{if(!dragging)return;dragging=false;const d=e.clientX-startX;if(Math.abs(d)>35)shift(d)});
-  $('#swipeControl').addEventListener('click',()=>shift(Math.random()>.5?1:-1));
-  $('#deckPause').addEventListener('click',e=>{e.stopPropagation();paused=!paused;e.currentTarget.textContent=paused?'▶':'Ⅱ';e.currentTarget.setAttribute('aria-label',paused?'Resume card motion':'Pause card motion')});
-
   $('.language').addEventListener('click',e=>{e.currentTarget.textContent=e.currentTarget.textContent==='EN'?'SI':'EN'});
   $('.theme-button').addEventListener('click',e=>{document.documentElement.classList.toggle('extra-soft');e.currentTarget.animate([{transform:'rotate(0)'},{transform:'rotate(180deg)'}],{duration:450})});
-
-  let ctx,osc,gain;const sound=$('.sound-orb');
-  sound.addEventListener('click',()=>{const on=sound.dataset.on==='1';sound.dataset.on=on?'0':'1';sound.textContent=on?'◖':'◉';if(!on){ctx||=new(AudioContext||webkitAudioContext)();osc=ctx.createOscillator();gain=ctx.createGain();osc.type='sine';osc.frequency.value=68;gain.gain.value=.012;osc.connect(gain).connect(ctx.destination);osc.start()}else if(osc){osc.stop();osc=null}});
 
   const assistant=$('#assistant'), assistantButton=$('#assistantButton');
   const setAssistant=open=>{assistant.classList.toggle('open',open);assistant.setAttribute('aria-hidden',String(!open));assistantButton.setAttribute('aria-expanded',String(open))};

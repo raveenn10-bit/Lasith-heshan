@@ -12,12 +12,13 @@
   <meta property="og:image" content="assets/lasith-heshan-original.jpg">
   <title>Lasith Heshan — Beyond the Frame</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="assets/lasith-heshan.webp" as="image" type="image/webp">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="assets.css">
+  <link rel="stylesheet" href="sequence.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Lasith Heshan","jobTitle":"Digital Creator","homeLocation":{"@type":"Place","name":"Galle, Sri Lanka"},"sameAs":["https://www.facebook.com/share/18mfixSAkc/?mibextid=wwXIfr","https://www.instagram.com/hesh_an25/"]}</script>
 </head>
 <body>
@@ -53,17 +54,22 @@
   </div>
 
   <main id="main">
-    <section class="hero" id="home">
-      <div class="hero-headline"><p>hello, I’m Lasith</p><h1>Welcome to<br><em>Lasith.</em></h1></div>
-      <div class="swipe-deck reveal" id="swipeDeck">
-        <div class="deck-card deck-back"><img src="assets/lasith-heshan.webp" alt="Lasith Heshan portrait backdrop"></div>
-        <div class="deck-card deck-mid"><img src="assets/lasith-heshan.webp" alt="Lasith Heshan portrait layer"></div>
-        <div class="deck-card deck-front"><img src="assets/lasith-heshan.webp" width="1380" height="2048" alt="Lasith Heshan in a black suit" fetchpriority="high"><button type="button" id="deckPause" aria-label="Pause card motion">Ⅱ</button><span class="tape tape-one">DIGITAL CREATOR</span><span class="tape tape-two">BEYOND THE FRAME</span></div>
-        <button class="swipe-control" id="swipeControl" type="button"><span>←</span> Swipe <span>→</span></button>
+    <section class="sequence-hero" id="home" aria-label="Welcome to Lasith Heshan's world">
+      <div class="sequence-stage">
+        <div class="sequence-media">
+          <picture><source media="(max-width:767px)" srcset="assets/sequence/mobile/poster.jpg"><img src="assets/sequence/desktop/poster.jpg" alt="Lasith Heshan in a black suit against a cinematic red studio backdrop" fetchpriority="high" width="1280" height="720"></picture>
+          <canvas aria-hidden="true"></canvas>
+        </div>
+        <div class="sequence-shade" aria-hidden="true"></div>
+        <div class="sequence-copy">
+          <p class="sequence-eyebrow">WELCOME TO MY WORLD</p>
+          <h1><span>LASITH</span><span>HESHAN.</span></h1>
+          <p class="sequence-subtitle">Personal Portfolio</p>
+          <a class="sequence-link" href="#about">Discover My World <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="sequence-foot"><span>SCROLL TO EXPLORE ↓</span><span>GALLE, SRI LANKA</span></div>
+        <div class="sequence-progress" aria-hidden="true"></div>
       </div>
-      <div class="hero-statement reveal"><p>Creating content that</p><h2>connects brands with <em>people.</em></h2></div>
-      <button class="sound-orb" type="button" aria-label="Toggle ambient sound">◖</button>
-      <div class="soft-orb orb-one" aria-hidden="true"></div><div class="soft-orb orb-two" aria-hidden="true"></div>
     </section>
 
     <section class="about section" id="about">
@@ -122,6 +128,9 @@
   <aside class="assistant" id="assistant" aria-hidden="true"><div class="assistant-head"><div><span>LH</span><p><strong>Ask Lasith</strong><small>Website assistant</small></p></div><button id="assistantClose" type="button" aria-label="Close assistant">×</button></div><div class="assistant-body" id="assistantBody"><div class="bot-message">Hi! I’m the website assistant—not Lasith personally. What would you like to know?</div></div><div class="assistant-options"><button data-answer="work">Work with Lasith</button><button data-answer="social">Official socials</button><button data-answer="about">About Lasith</button></div></aside>
 
 
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
   <script src="script.js" defer></script>
+  <script src="sequence.js" defer></script>
 </body>
 </html>
